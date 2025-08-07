@@ -1,404 +1,307 @@
 <!DOCTYPE html>
 <html lang="bn">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S10 Max Smart Watch - অফার সীমিত সময়ের জন্য!</title>
-
+    
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    
     <!-- Google Fonts (Hind Siliguri for Bengali & Poppins for English numerals) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@700&display=swap"
-      rel="stylesheet"
-    />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    
     <style>
-      body {
-        font-family: "Hind Siliguri", sans-serif;
-      }
-      .font-poppins {
-        font-family: "Poppins", sans-serif;
-      }
-      .gradient-btn {
-        background: linear-gradient(90deg, #e85d04, #d00000);
-        transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-        box-shadow: 0 4px 15px 0 rgba(232, 93, 4, 0.4);
-      }
-      .gradient-btn:hover {
-        transform: translateY(-5px) scale(1.05);
-        box-shadow: 0 10px 25px 0 rgba(232, 93, 4, 0.6);
-      }
-      .feature-card {
-        background: rgba(255, 255, 255, 0.05);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-      }
-      .feature-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-      }
-      .price-tag {
-        background: linear-gradient(90deg, #e85d04, #d00000);
-      }
-      /* Simple animation for elements appearing on scroll */
-      .reveal {
-        opacity: 0;
-        transform: translateY(40px);
-        transition: opacity 1s ease-out, transform 1s ease-out;
-      }
-      .reveal.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-btn {
+            background: linear-gradient(90deg, #e85d04, #d00000);
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 4px 15px 0 rgba(232, 93, 4, 0.4);
+        }
+        .gradient-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 25px 0 rgba(232, 93, 4, 0.6);
+        }
+        .gradient-btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        .price-tag {
+            background: linear-gradient(90deg, #e85d04, #d00000);
+        }
+        /* Simple animation for elements appearing on scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
-  </head>
-  <body class="bg-gray-900 text-white antialiased">
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
     <!-- Hero Section -->
-    <section
-      class="min-h-screen flex items-center justify-center px-4 py-16"
-      style="background: radial-gradient(circle, #2c3e50, #161a25)"
-    >
-      <div class="container mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <div class="text-center md:text-left reveal">
-            <span
-              class="inline-block bg-red-600 text-white text-sm font-bold px-4 py-1 rounded-full mb-4"
-              >স্টক ফুরিয়ে আসছে!</span
-            >
-            <h1 class="text-4xl md:text-6xl font-bold my-4 leading-tight">
-              আপনার স্টাইল ও জীবনকে দিন এক নতুন মাত্রা
-            </h1>
-            <p class="text-gray-300 mb-8 max-w-lg mx-auto md:mx-0 text-lg">
-              S10 Max স্মার্ট ওয়াচ শুধু একটি ঘড়ি নয়, এটি আপনার পার্সোনাল
-              অ্যাসিস্ট্যান্ট। প্রিমিয়াম সব ফিচার এখন পাচ্ছেন অবিশ্বাস্য মূল্যে,
-              সাথে **সম্পূর্ণ ফ্রি ডেলিভারি!**
-            </p>
-            <a
-              href="#order-form"
-              class="gradient-btn text-white font-bold py-4 px-10 rounded-full inline-block text-xl shadow-lg"
-            >
-              ৳১৪৯৯ টাকায় এখনই অর্ডার করুন
-            </a>
-          </div>
-          <div class="flex justify-center reveal">
-            <img
-              src="/img/1.webp"
-              alt="S10 Max Smart Watch"
-              class="w-full max-w-sm md:max-w-md rounded-lg transform hover:scale-105 transition-transform duration-500 cursor-pointer"
-            />
-          </div>
+    <section class="min-h-screen flex items-center justify-center px-4 py-16" style="background: radial-gradient(circle, #2c3e50, #161a25);">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-left reveal">
+                    <span class="inline-block bg-red-600 text-white text-sm font-bold px-4 py-1 rounded-full mb-4">স্টক ফুরিয়ে আসছে!</span>
+                    <h1 class="text-4xl md:text-6xl font-bold my-4 leading-tight">আপনার স্টাইল ও জীবনকে দিন এক নতুন মাত্রা</h1>
+                    <p class="text-gray-300 mb-8 max-w-lg mx-auto md:mx-0 text-lg">S10 Max স্মার্ট ওয়াচ শুধু একটি ঘড়ি নয়, এটি আপনার পার্সোনাল অ্যাসিস্ট্যান্ট। প্রিমিয়াম সব ফিচার এখন পাচ্ছেন অবিশ্বাস্য মূল্যে, সাথে **সম্পূর্ণ ফ্রি ডেলিভারি!**</p>
+                    <a href="#order-form" class="gradient-btn text-white font-bold py-4 px-10 rounded-full inline-block text-xl shadow-lg">
+                        ৳1499 টাকায় এখনই অর্ডার করুন
+                    </a>
+                </div>
+                <div class="flex justify-center reveal">
+                    <img src="./img/1.webp" alt="S10 Max Smart Watch" class="w-full max-w-sm md:max-w-md rounded-lg transform hover:scale-105 transition-transform duration-500 cursor-pointer" onerror="this.onerror=null;this.src='https://placehold.co/500x500/161a25/e85d04?text=Image+Not+Found';">
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Features Section -->
     <section class="py-20 px-4 bg-gray-900">
-      <div class="container mx-auto">
-        <div class="text-center mb-16 reveal">
-          <h2 class="text-4xl font-bold">
-            কেন হাজারো মানুষের প্রথম পছন্দ S10 Max?
-          </h2>
-          <p class="text-gray-400 mt-3 text-lg">
-            কারণ এটি সাধারণ কোনো ঘড়ি নয়, এর প্রতিটি ফিচার আপনার জীবনকে করবে সহজ।
-          </p>
+        <div class="container mx-auto">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold">কেন হাজারো মানুষের প্রথম পছন্দ S10 Max?</h2>
+                <p class="text-gray-400 mt-3 text-lg">কারণ এটি সাধারণ কোনো ঘড়ি নয়, এর প্রতিটি ফিচার আপনার জীবনকে করবে সহজ।</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card p-8 rounded-2xl text-center reveal">
+                    <div class="text-5xl text-orange-400 mb-4 inline-block">📞</div>
+                    <h3 class="text-xl font-bold mb-2">ক্রিস্টাল ক্লিয়ার কলিং</h3>
+                    <p class="text-gray-300">ফোন পকেটে রেখেই, ঘড়ির মাধ্যমে প্রিয়জনের সাথে কথা বলুন একদম পরিষ্কার সাউন্ডে।</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="feature-card p-8 rounded-2xl text-center reveal" style="transition-delay: 100ms;">
+                    <div class="text-5xl text-orange-400 mb-4 inline-block">🖥️</div>
+                    <h3 class="text-xl font-bold mb-2">বিশাল ও ভাইব্রান্ট ডিসপ্লে</h3>
+                    <p class="text-gray-300">এর বড় এবং উজ্জ্বল HD স্ক্রিনে সবকিছু দেখুন আরও জীবন্ত ও আকর্ষণীয়ভাবে।</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="feature-card p-8 rounded-2xl text-center reveal" style="transition-delay: 200ms;">
+                    <div class="text-5xl text-orange-400 mb-4 inline-block">❤️</div>
+                    <h3 class="text-xl font-bold mb-2">আপনার স্বাস্থ্যের প্রহরী</h3>
+                    <p class="text-gray-300">২৪/৭ হার্ট রেট, ব্লাড অক্সিজেন ও ঘুম মনিটর করে আপনাকে রাখবে আরও বেশি সুস্থ।</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="feature-card p-8 rounded-2xl text-center reveal" style="transition-delay: 300ms;">
+                    <div class="text-5xl text-orange-400 mb-4 inline-block">🔋</div>
+                    <h3 class="text-xl font-bold mb-2">চার্জের চিন্তা শেষ</h3>
+                    <p class="text-gray-300">একবার চার্জ দিলে ৭ দিন পর্যন্ত ব্যবহার করুন নিশ্চিন্তে। পাওয়ার ব্যাংক এখন অতীত।</p>
+                </div>
+            </div>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <!-- Feature 1 -->
-          <div class="feature-card p-8 rounded-2xl text-center reveal">
-            <div class="text-5xl text-orange-400 mb-4 inline-block">📞</div>
-            <h3 class="text-xl font-bold mb-2">ক্রিস্টাল ক্লিয়ার কলিং</h3>
-            <p class="text-gray-300">
-              ফোন পকেটে রেখেই, ঘড়ির মাধ্যমে প্রিয়জনের সাথে কথা বলুন একদম
-              পরিষ্কার সাউন্ডে।
-            </p>
-          </div>
-          <!-- Feature 2 -->
-          <div
-            class="feature-card p-8 rounded-2xl text-center reveal"
-            style="transition-delay: 100ms"
-          >
-            <div class="text-5xl text-orange-400 mb-4 inline-block">🖥️</div>
-            <h3 class="text-xl font-bold mb-2">বিশাল ও ভাইব্রান্ট ডিসপ্লে</h3>
-            <p class="text-gray-300">
-              এর বড় এবং উজ্জ্বল HD স্ক্রিনে সবকিছু দেখুন আরও জীবন্ত ও
-              আকর্ষণীয়ভাবে।
-            </p>
-          </div>
-          <!-- Feature 3 -->
-          <div
-            class="feature-card p-8 rounded-2xl text-center reveal"
-            style="transition-delay: 200ms"
-          >
-            <div class="text-5xl text-orange-400 mb-4 inline-block">❤️</div>
-            <h3 class="text-xl font-bold mb-2">আপনার স্বাস্থ্যের প্রহরী</h3>
-            <p class="text-gray-300">
-              ২৪/৭ হার্ট রেট, ব্লাড অক্সিজেন ও ঘুম মনিটর করে আপনাকে রাখবে আরও
-              বেশি সুস্থ।
-            </p>
-          </div>
-          <!-- Feature 4 -->
-          <div
-            class="feature-card p-8 rounded-2xl text-center reveal"
-            style="transition-delay: 300ms"
-          >
-            <div class="text-5xl text-orange-400 mb-4 inline-block">🔋</div>
-            <h3 class="text-xl font-bold mb-2">চার্জের চিন্তা শেষ</h3>
-            <p class="text-gray-300">
-              একবার চার্জ দিলে ৭ দিন পর্যন্ত ব্যবহার করুন নিশ্চিন্তে। পাওয়ার
-              ব্যাংক এখন অতীত।
-            </p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Gallery Section -->
     <section class="py-20 px-4 bg-gray-800">
-      <div class="container mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-12 reveal">
-          আপনার হাতের জন্য এক টুকরো আভিজাত্য
-        </h2>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="reveal rounded-lg overflow-hidden shadow-xl">
-            <img
-              src="./img/2.jpg"
-              alt="Watch Side View"
-              class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-            />
-          </div>
-          <div
-            class="reveal rounded-lg overflow-hidden shadow-xl"
-            style="transition-delay: 100ms"
-          >
-            <img
-              src="./img/3.jpg"
-              alt="Watch on Wrist"
-              class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-            />
-          </div>
-          <div
-            class="reveal rounded-lg overflow-hidden shadow-xl"
-            style="transition-delay: 200ms"
-          >
-            <img
-              src="./img/4.jpg"
-              alt="Watch Face"
-              class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500"
-            />
-          </div>
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-12 reveal">আপনার হাতের জন্য এক টুকরো আভিজাত্য</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="reveal rounded-lg overflow-hidden shadow-xl"><img src="./img/2.jpg" alt="Watch Side View" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/e85d04?text=Image+Not+Found';"></div>
+                <div class="reveal rounded-lg overflow-hidden shadow-xl" style="transition-delay: 100ms;"><img src="./img/3.jpg" alt="Watch on Wrist" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/e85d04?text=Image+Not+Found';"></div>
+                <div class="reveal rounded-lg overflow-hidden shadow-xl" style="transition-delay: 200ms;"><img src="./img/4.jpg" alt="Watch Face" class="w-full h-full object-cover transform hover:scale-110 transition-transform duration-500" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1f2937/e85d04?text=Image+Not+Found';"></div>
+            </div>
         </div>
-      </div>
     </section>
 
     <!-- Order Form Section -->
-    <section
-      id="order-form"
-      class="py-20 px-4"
-      style="background: radial-gradient(circle, #2c3e50, #161a25)"
-    >
-      <div class="container mx-auto max-w-3xl">
-        <div class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-2xl reveal">
-          <div class="text-center mb-8">
-            <h2 class="text-4xl font-extrabold">এই সুযোগ আর আসবে না!</h2>
-            <p class="text-gray-300 mt-3 text-lg">
-              আজকের এই বিশেষ মূল্য শুধু আপনার জন্য।
-            </p>
-            <div class="my-6 bg-gray-900 p-6 rounded-lg inline-block">
-              <div class="flex items-start justify-center space-x-6">
-                <div class="flex flex-col items-center">
-                  <p class="text-gray-400 text-xl mb-1">পূর্ব মূল্য</p>
-                  <span class="text-2xl text-gray-500 line-through font-poppins"
-                    >৳2500</span
-                  >
+    <section id="order-form" class="py-20 px-4" style="background: radial-gradient(circle, #2c3e50, #161a25);">
+        <div class="container mx-auto max-w-3xl">
+            <div class="bg-gray-800 p-8 md:p-12 rounded-2xl shadow-2xl reveal">
+                <div class="text-center mb-8">
+                    <h2 class="text-4xl font-extrabold">এই সুযোগ আর আসবে না!</h2>
+                    <p class="text-gray-300 mt-3 text-lg">আজকের এই বিশেষ মূল্য শুধু আপনার জন্য।</p>
+                    <div class="my-6 bg-gray-900 p-6 rounded-lg inline-block">
+                        <div class="flex items-start justify-center space-x-6">
+                            <div class="flex flex-col items-center">
+                                <p class="text-gray-400 text-xl mb-1">পূর্ব মূল্য</p>
+                                <span class="text-2xl text-gray-500 line-through font-poppins">৳2500</span>
+                            </div>
+                            <div class="border-l-2 border-dashed border-gray-600 h-16 mt-2"></div>
+                            <div class="flex flex-col items-center">
+                                <p class="text-orange-400 text-xl font-bold mb-1">অফার মূল্য</p>
+                                <span class="text-5xl font-bold price-tag text-white py-1 px-4 rounded-lg font-poppins">৳1499</span>
+                            </div>
+                        </div>
+                        <p class="mt-4 text-lg font-semibold text-green-400">আপনি সাশ্রয় করছেন <span class="font-poppins">৳1001</span> + ফ্রি ডেলিভারি!</p>
+                    </div>
                 </div>
-                <div
-                  class="border-l-2 border-dashed border-gray-600 h-16 mt-2"
-                ></div>
-                <div class="flex flex-col items-center">
-                  <p class="text-orange-400 text-xl font-bold mb-1">
-                    অফার মূল্য
-                  </p>
-                  <span
-                    class="text-5xl font-bold price-tag text-white py-1 px-4 rounded-lg font-poppins"
-                    >৳1499</span
-                  >
-                </div>
-              </div>
-              <p class="mt-4 text-lg font-semibold text-green-400">
-                আপনি সাশ্রয় করছেন ৳১০০১ + ফ্রি ডেলিভারি!
-              </p>
-            </div>
-          </div>
 
-          <form id="purchase-form">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <!-- Name, Phone, Address, District, Thana -->
-              <div class="md:col-span-2">
-                <label for="name" class="block mb-2 font-medium text-gray-300"
-                  >আপনার নাম <span class="text-red-500">*</span></label
-                >
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="সম্পূর্ণ নাম লিখুন"
-                  class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required
-                />
-              </div>
-              <div class="md:col-span-2">
-                <label for="phone" class="block mb-2 font-medium text-gray-300"
-                  >মোবাইল নাম্বার <span class="text-red-500">*</span></label
-                >
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  placeholder="সচল মোবাইল নাম্বার দিন"
-                  class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required
-                />
-              </div>
-              <div class="md:col-span-2">
-                <label
-                  for="address"
-                  class="block mb-2 font-medium text-gray-300"
-                  >সম্পূর্ণ ঠিকানা <span class="text-red-500">*</span></label
-                >
-                <textarea
-                  id="address"
-                  name="address"
-                  rows="3"
-                  placeholder="বাড়ি/হোল্ডিং, রোড, এলাকা/গ্রাম"
-                  class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required
-                ></textarea>
-              </div>
-              <div>
-                <label
-                  for="district"
-                  class="block mb-2 font-medium text-gray-300"
-                  >জেলা <span class="text-red-500">*</span></label
-                >
-                <input
-                  type="text"
-                  id="district"
-                  name="district"
-                  placeholder="আপনার জেলা"
-                  class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required
-                />
-              </div>
-              <div>
-                <label for="thana" class="block mb-2 font-medium text-gray-300"
-                  >থানা/উপজেলা <span class="text-red-500">*</span></label
-                >
-                <input
-                  type="text"
-                  id="thana"
-                  name="thana"
-                  placeholder="আপনার থানা/উপজেলা"
-                  class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"
-                  required
-                />
-              </div>
+                <form id="purchase-form">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Form fields -->
+                        <div class="md:col-span-2">
+                            <label for="name" class="block mb-2 font-medium text-gray-300">আপনার নাম <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" placeholder="সম্পূর্ণ নাম লিখুন" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="phone" class="block mb-2 font-medium text-gray-300">মোবাইল নাম্বার <span class="text-red-500">*</span></label>
+                            <input type="tel" id="phone" name="phone" placeholder="সচল মোবাইল নাম্বার দিন" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                        </div>
+                        <div class="md:col-span-2">
+                            <label for="address" class="block mb-2 font-medium text-gray-300">সম্পূর্ণ ঠিকানা <span class="text-red-500">*</span></label>
+                            <textarea id="address" name="address" rows="3" placeholder="বাড়ি/হোল্ডিং, রোড, এলাকা/গ্রাম" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500" required></textarea>
+                        </div>
+                        <div>
+                            <label for="district" class="block mb-2 font-medium text-gray-300">জেলা <span class="text-red-500">*</span></label>
+                            <input type="text" id="district" name="district" placeholder="আপনার জেলা" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                        </div>
+                        <div>
+                            <label for="thana" class="block mb-2 font-medium text-gray-300">থানা/উপজেলা <span class="text-red-500">*</span></label>
+                            <input type="text" id="thana" name="thana" placeholder="আপনার থানা/উপজেলা" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                        </div>
+                         <div class="md:col-span-2">
+                            <label for="note" class="block mb-2 font-medium text-gray-300">নোট (ঐচ্ছিক)</label>
+                            <textarea id="note" name="note" rows="2" placeholder="বিশেষ কোনো নির্দেশনা থাকলে লিখুন..." class="w-full bg-gray-700 border border-gray-600 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+                        </div>
+                    </div>
+                    <div class="mt-10 text-center">
+                        <button type="submit" class="gradient-btn text-white font-bold py-4 px-16 rounded-full inline-block text-xl shadow-lg w-full md:w-auto transform hover:scale-105">
+                            ফ্রি ডেলিভারিতে অর্ডার কনফার্ম করুন
+                        </button>
+                        <p class="text-sm text-gray-400 mt-4">✓ সারা বাংলাদেশে ক্যাশ অন ডেলিভারি।</p>
+                    </div>
+                </form>
             </div>
-            <div class="mt-10 text-center">
-              <button
-                type="submit"
-                class="gradient-btn text-white font-bold py-4 px-16 rounded-full inline-block text-xl shadow-lg w-full md:w-auto transform hover:scale-105"
-              >
-                ফ্রি ডেলিভারিতে অর্ডার কনফার্ম করুন
-              </button>
-              <p class="text-sm text-gray-400 mt-4">
-                ✓ সারা বাংলাদেশে ক্যাশ অন ডেলিভারি।
-              </p>
-            </div>
-          </form>
         </div>
-      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 py-6 text-center">
-      <p class="text-gray-500">&copy; ২০২৪। সর্বস্বত্ব সংরক্ষিত।</p>
+        <p class="text-gray-500">&copy; ২০২৫। সর্বস্বত্ব সংরক্ষিত।</p>
     </footer>
 
     <!-- Thank You Modal -->
-    <div
-      id="thank-you-modal"
-      class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4"
-    >
-      <div
-        class="bg-gray-800 rounded-2xl p-10 text-center shadow-2xl max-w-sm mx-auto transform transition-all scale-95"
-      >
-        <div class="text-6xl mb-4">🎉</div>
-        <h2 class="text-3xl font-bold text-white mb-2">অভিনন্দন!</h2>
-        <p class="text-gray-300 mb-6">
-          আপনার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে। আমাদের প্রতিনিধি খুব শীঘ্রই
-          আপনার সাথে যোগাযোগ করে অর্ডারটি কনফার্ম করবে।
-        </p>
-        <button
-          id="close-modal"
-          class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full"
-        >
-          ঠিক আছে
-        </button>
-      </div>
+    <div id="thank-you-modal" class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
+        <div class="bg-gray-800 rounded-2xl p-10 text-center shadow-2xl max-w-sm mx-auto transform transition-all scale-95">
+            <div class="text-6xl mb-4">🎉</div>
+            <h2 class="text-3xl font-bold text-white mb-2">অভিনন্দন!</h2>
+            <p class="text-gray-300 mb-6">আপনার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে। আমাদের প্রতিনিধি খুব শীঘ্রই আপনার সাথে যোগাযোগ করে অর্ডারটি কনফার্ম করবে।</p>
+            <button id="close-modal" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full">ঠিক আছে</button>
+        </div>
+    </div>
+    
+    <!-- Error Modal -->
+    <div id="error-modal" class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
+        <div class="bg-gray-800 rounded-2xl p-10 text-center shadow-2xl max-w-sm mx-auto transform transition-all scale-95">
+            <div class="text-6xl mb-4">😞</div>
+            <h2 class="text-3xl font-bold text-white mb-2">দুঃখিত!</h2>
+            <p id="error-message" class="text-gray-300 mb-6">আপনার অর্ডারটি সাবমিট করা যায়নি। অনুগ্রহ করে আবার চেষ্টা করুন।</p>
+            <button id="close-error-modal" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-full">বন্ধ করুন</button>
+        </div>
     </div>
 
+
     <script>
-      // Form submission logic
-      const form = document.getElementById("purchase-form");
-      const thankYouModal = document.getElementById("thank-you-modal");
-      const closeModalBtn = document.getElementById("close-modal");
+        const form = document.getElementById('purchase-form');
+        const submitButton = form.querySelector('button[type="submit"]');
+        const thankYouModal = document.getElementById('thank-you-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+        const errorModal = document.getElementById('error-modal');
+        const errorMessage = document.getElementById('error-message');
+        const closeErrorModalBtn = document.getElementById('close-error-modal');
 
-      form.addEventListener("submit", function (event) {
-        event.preventDefault();
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
-        console.log("Order Details:", data);
+        form.addEventListener('submit', async function(event) {
+            event.preventDefault();
+            
+            submitButton.disabled = true;
+            submitButton.textContent = 'অর্ডার প্রসেস হচ্ছে...';
 
-        thankYouModal.classList.remove("hidden");
-        setTimeout(() => {
-          thankYouModal.querySelector("div").classList.remove("scale-95");
-          thankYouModal.querySelector("div").classList.add("scale-100");
-        }, 10);
-      });
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
 
-      closeModalBtn.addEventListener("click", function () {
-        thankYouModal.querySelector("div").classList.remove("scale-100");
-        thankYouModal.querySelector("div").classList.add("scale-95");
-        setTimeout(() => {
-          thankYouModal.classList.add("hidden");
-          form.reset();
-        }, 300);
-      });
+            try {
+                const response = await fetch('https://mosaddikdev.wixstudio.com/daraz/_functions/data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                });
 
-      // Scroll reveal animation
-      const revealElements = document.querySelectorAll(".reveal");
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("visible");
-              observer.unobserve(entry.target);
+                if (response.ok) {
+                    thankYouModal.classList.remove('hidden');
+                    setTimeout(() => {
+                        thankYouModal.querySelector('div').classList.remove('scale-95');
+                        thankYouModal.querySelector('div').classList.add('scale-100');
+                    }, 10);
+                    form.reset();
+                } else {
+                    const errorData = await response.json();
+                    errorMessage.textContent = `একটি সমস্যা হয়েছে: ${errorData.message || 'অনুগ্রহ করে আবার চেষ্টা করুন।'}`;
+                    errorModal.classList.remove('hidden');
+                     setTimeout(() => {
+                        errorModal.querySelector('div').classList.remove('scale-95');
+                        errorModal.querySelector('div').classList.add('scale-100');
+                    }, 10);
+                }
+            } catch (error) {
+                console.error('Submission error:', error);
+                errorMessage.textContent = 'একটি নেটওয়ার্ক সমস্যা হয়েছে। আপনার ইন্টারনেট সংযোগ চেক করে আবার চেষ্টা করুন।';
+                errorModal.classList.remove('hidden');
+                 setTimeout(() => {
+                    errorModal.querySelector('div').classList.remove('scale-95');
+                    errorModal.querySelector('div').classList.add('scale-100');
+                }, 10);
+            } finally {
+                submitButton.disabled = false;
+                submitButton.innerHTML = 'ফ্রি ডেলিভারিতে অর্ডার কনফার্ম করুন';
             }
-          });
-        },
-        {
-          threshold: 0.15,
-        }
-      );
+        });
 
-      revealElements.forEach((el) => {
-        observer.observe(el);
-      });
+        function closeModal(modal) {
+            modal.querySelector('div').classList.remove('scale-100');
+            modal.querySelector('div').classList.add('scale-95');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 300);
+        }
+
+        closeModalBtn.addEventListener('click', () => closeModal(thankYouModal));
+        closeErrorModalBtn.addEventListener('click', () => closeModal(errorModal));
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        revealElements.forEach(el => {
+            observer.observe(el);
+        });
     </script>
-  </body>
+
+</body>
 </html>
